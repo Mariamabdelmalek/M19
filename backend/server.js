@@ -15,7 +15,7 @@ const fs = require('fs');
 const db = mysql.createConnection({
   host     : 'db-mysql-nyc3-50363-do-user-18890227-0.k.db.ondigitalocean.com',
   user     : 'doadmin',
-  password : 'process.env.DB_PASSWORD',
+  password : 'AVNS_AxA0TYSGrJp1I6qHatL',
   port     : 25060 ,
   database : 'defaultdb',
   ssl      : false
