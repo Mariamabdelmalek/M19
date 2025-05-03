@@ -1,0 +1,36 @@
+<!-- src\app\dashboard\dashboard.component.html -->
+<h2>Dashboard</h2>
+
+<section>
+  <h3>Duolingo Doubles Language Courses with AI</h3>
+  <img src="assets/ai-Adobe.png" alt="image" width="500" height="300" />
+  <p>
+    Duolingo has more than doubled its language course offerings by integrating generative AI into its development process. Traditionally, creating a new course took years, but with AI and a new "shared content" system, Duolingo can now quickly customize base courses for all 28 supported user interface languages. This expansion makes their seven most popular non-English languages—Spanish, French, German, Italian, Japanese, Korean, and Mandarin—accessible globally. The company's shift to an "AI-first" strategy emphasizes that work which can be automated will no longer be outsourced to contractors, although there are no plans to reduce full-time staff. AI proficiency will now factor into hiring and performance evaluations, aligning with Duolingo's commitment to maintaining high-quality educational standards while accelerating content creation.
+  </p>
+  <p>
+  <strong>Reference</strong>:
+
+       The Verge
+      <br />
+      <a href=" https://www.theverge.com/news/658968/duolingo-language-courses-ai​" target="_blank">
+        https://www.theverge.com/news/658968/duolingo-language-courses-ai​
+      </a>
+    </p>
+
+</section>
+
+<section>
+  <h3>Technical Aspects of the Project</h3>
+  <p>
+    This project is a single-page application (SPA) that provides a dashboard for visualizing data related to generative AI tools.
+    The application is built using Angular 12, which allows for the creation of dynamic and responsive user interfaces. The backend is powered by Node.js and Express, providing a robust API for data retrieval and manipulation. MySQL is used as the database to store chart data, ensuring efficient data management and retrieval.
+    The application is secured using JSON Web Tokens (JWT) for authentication, ensuring that only authorized users can access the API endpoints. NGINX is used as a reverse proxy to serve the Angular build and handle API requests, providing an additional layer of security and performance optimization.
+    The charts are implemented using ng2-charts, which is a wrapper for Chart.js. The data is fetched asynchronously using Angular's HttpClient, ensuring a smooth user experience without page reloads.
+    The application is designed to be modular and scalable, allowing for easy addition of new features and enhancements in the future. The code is well-structured and follows best practices for Angular development, ensuring maintainability and readability.
+    The application is also designed to be responsive, ensuring that it works well on various devices, including desktops, tablets, and smartphones.
+
+  </p>
+</section>
+
+<button (click)="logout()">Logout</button>
+

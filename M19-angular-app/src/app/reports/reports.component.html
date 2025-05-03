@@ -1,0 +1,17 @@
+<!-- src\app\reports\reports.component.html -->
+<div style="display: block; width: 400px; height: 400px; margin: auto;">
+  <h2>Duolingo's User Interface Language Support</h2>
+  <canvas baseChart
+    [data]="barChartData"
+    [type]="barChartType"
+    [options]="barChartOptions"
+    [legend]="barChartLegend"
+     >
+  </canvas>
+
+</div>
+
+<p class="chart-desc">
+  This chart showcases the growth in the number of user interface languages supported by Duolingo, demonstrating the company's efforts to make language learning more accessible to a global audience through AI-driven customization.
+</p>
+<footer> Data source: https://www.theverge.com/news/658968/duolingo-language-courses-ai</footer>

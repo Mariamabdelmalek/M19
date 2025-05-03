@@ -1,0 +1,17 @@
+<!-- src\app\summary\summary.component.html -->
+<h2>Summary Page</h2>
+<div class="chart-wrapper" role="region"aria-label="Duolingo's Language Course Expansion Over Time">
+   <canvas baseChart
+    [data]="barChartData"
+    [options]="barChartOptions"
+    [type]="barChartType"
+    [legend]="true">
+  </canvas>
+
+</div>
+
+<p>
+  This chart illustrates the significant increase in the number of language courses offered by Duolingo, highlighting the impact of integrating generative AI into their course development process.
+</p>
+<footer> Data source: https://www.theverge.com/news/658968/duolingo-language-courses-ai</footer>
+

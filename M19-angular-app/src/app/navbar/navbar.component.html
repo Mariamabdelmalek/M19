@@ -1,0 +1,16 @@
+<!-- src\app\navbar\navbar.component.html -->
+
+<nav class="navbar" *ngIf="isLoggedIn()">
+  <img src="assets/ai_5278402.png" alt="Logo" width="40" height="40" />
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/summary">Summary</a>
+  <a routerLink="/reports">Reports</a>
+
+
+  <button *ngIf="isLoggedIn()" (click)="logout()">Logout</button>
+
+</nav>
+
+
+<router-outlet></router-outlet>
+
