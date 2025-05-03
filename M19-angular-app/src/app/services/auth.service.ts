@@ -19,7 +19,7 @@ export class AuthService {
 
   login(username: string, password: string): boolean {
       if (username === this.validUsername && password === this.validPassword) {
-        // Mock JWT token (you would normally generate a real token here)
+        // Mock JWT token 
         this.token = 'mock-jwt-token';
         localStorage.setItem('authToken', this.token);  // Store token in localStorage
         return true;

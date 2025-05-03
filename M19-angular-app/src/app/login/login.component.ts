@@ -17,12 +17,13 @@ export class LoginComponent implements OnInit {
   constructor(private authService: AuthService, private router: Router) {}
   ngOnInit(): void {
     if (this.authService.isAuthenticated()) {
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/dashboard'])
+      .then(ok => console.log('Navigation result', ok));
     }
   }
   login() {
     if (this.authService.login(this.username, this.password)) {
-      this.router.navigate(['/login']);
+      this.router.navigate(['/dashboard']);
     } else {
       this.errorMessage = 'Invalid credentials';
     }
