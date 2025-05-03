@@ -13,11 +13,11 @@ const fs = require('fs');
 
 // MySQL setup (adjust user/password/db as needed)
 const db = mysql.createConnection({
-  host     : 'db-mysql-nyc3-50363-do-user-18890227-0.k.db.ondigitalocean.com',
-  user     : 'doadmin',
-  password : 'AVNS_AxA0TYSGrJp1I6qHatL',
-  port     : 25060 ,
-  database : 'defaultdb',
+  host     : process.env.DB_HOST,
+  user     : process.env.DB_USER,
+  password : process.env.DB_PASSWORD,
+  port     : process.env.DB_PORT ,
+  database : process.env.DB_NAME,
   ssl      : false
 });
 db.connect(err => {
